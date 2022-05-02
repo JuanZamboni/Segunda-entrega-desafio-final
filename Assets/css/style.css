@@ -1,9 +1,17 @@
+/*--menu--*/
+
 .navbar{
 background-color: #AC50E1 !important;
+}
+.btn{
+    background-color:whitesmoke;
 }
 .letter-border{
     -webkit-text-stroke: 2px black;
 }
+
+/*--tarjetas--*/
+
 .container{
     display: flex;
     align-items: center;
@@ -17,15 +25,169 @@ background-color: #AC50E1 !important;
 }
 .card-cont{
     display: flex;
-
 }
+
+/*--banner--*/
+
 .banner{
     width: 100%;
     margin-top: 20px;
 }
-@media (max-width:800px){
+
+/*--footer--*/
+
+.footer{
+    width: 100%;
+    background-color: #AC50E1;
+}
+
+.footer .divi1{
+ width: 100%;
+ max-width: 1200px;
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 50px;
+ padding: 45px 0px;
+}
+
+.footer .divi1 .box figure{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .divi1 .box h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;   
+}
+
+.footer .divi1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer .divi1 .box .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #a93be9;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .divi1 .box .redes a:hover{
+    color: rgb(155, 149, 149);
+}
+
+.footer .divi2{
+    background-color: #a93be9;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer .divi2 small{
+    font-size: 15px;
+}
+
+/*--contacto--*/
+.form-cont{
+    padding-bottom: 70px;
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color:#AC50E1;
+    margin-right: 10px;
+}
+.container-form form .formulario, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-env{
+    padding: 15px;
+    font-size: 16px;
+    border:none;
+    outline: 0px;
+    background-color: #AC50E1;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-env:hover{
+   background-color: #a93be9; 
+}
+
+
+
+
+/*--media--*/
+
+@media screen and (max-width:800px){
     .card-cont{
         display: inline-block !important;
         width: 80%;
     }
+    .container-form{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-top: 90px;
+    }
+    .btn-env{
+        margin-right: 100px;
+    }
+    .footer .divi1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+       }
 }
